@@ -3,7 +3,7 @@
 根据 YApi 修改，仅限自用
 修改了 Dockerfile 的 yapi-cli 的安装，安装 yapi-cli2
 
-YApi: https://github.com/YMFE/yapi/releases
+YApi 源地址: https://github.com/YMFE/yapi/releases
 
 制作本地的 yapi docker 镜像, docker-compose 一键维护和部署.
 
@@ -12,9 +12,9 @@ YApi: https://github.com/YMFE/yapi/releases
 1. 初始化 db, 开启自定义配置
 
 ```
-git clone https://github.com/Ryan-Miao/docker-yapi.git
+git clone https://github.com/zy30651/yapi2.git
 cd docker-yapi
-docker-compose up
+docker-compose up -d
 ```
 
 打开 localhost:9090
@@ -54,7 +54,7 @@ docker-compose up
 
 访问 localhost:3000
 
-- 输入用户名ryan.miao@demo.com(自己输入的管理员邮箱)
+- 输入用户名admin@admin.com(自己输入的管理员邮箱)
 - 输入密码 ymfe.org(默认的初始化密码, 之后可以修改)
 
 然后可以导入一个 swagger 的接口数据试试:
